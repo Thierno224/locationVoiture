@@ -1,0 +1,13 @@
+color.*
+
+Si vous souhaitez être plus spécifique concernant les commandes colorisées, Git propose des paramètres de colorisation par action. Chacun peut être fixé à true, false ou always.
+
+color.branch
+color.diff
+color.interactive
+color.status
+
+De plus, chacun d’entre eux dispose d’un sous-ensemble de paramètres qui permettent de surcharger les couleurs pour des parties des affichages. Par exemple, pour régler les couleurs de méta-informations du diff avec une écriture en bleu gras (bold en anglais) sur fond noir :
+
+$ git config --global color.diff.meta "blue black bold"
+

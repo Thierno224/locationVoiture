@@ -1,0 +1,13 @@
+
+color.ui
+
+Git colorise automatiquement la plupart de ses affichages mais il existe une option globale pour désactiver ce comportement. Pour désactiver toute la colorisation par défaut, lancez ceci :
+
+$ git config --global color.ui false
+
+La valeur par défaut est auto, ce qui colorise la sortie lorsque celle-ci est destinée à un terminal, mais élimine les codes de contrôle de couleur quand la sortie est redirigée dans un fichier ou l’entrée d’une autre commande.
+
+Vous pouvez aussi la régler à always (toujours) pour activer la colorisation en permanence. C’est une option rarement utile. Dans la plupart des cas, si vous tenez vraiment à coloriser vos sorties redirigées, vous pourrez passer le drapeau --color à la commande Git pour la forcer à utiliser les codes de couleur. Le réglage par défaut est donc le plus utilisé.
+
+
+Modification du fichier
